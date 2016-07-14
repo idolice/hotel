@@ -8,7 +8,17 @@
 
 ## Task
 1. 
-    - 描述:计算regular客户住一天lakewood酒店所需要花费的价格
-    - 动机:计算regular用户入住酒店的总费用首先需要计算出用户一天需要的费用
-    - 对象:客户、酒店
-    - 测试名称:should_return_price_when_regular_customer_live_in_lakewood_for_one_day()
+    - 描述:酒店预订系统找到普通用户工作期间可预订的最便宜的酒店
+    - 动机:实现核心需求的第一条
+    - 对象:酒店预订系统、客户、酒店、预订
+    - 测试名称:should_return_cheapest_hotel_when_regular_customer_live_in_weekday()
+2.
+    - 描述:酒店预订系统找到周末时间段普通用户可预订的最便宜的酒店
+    - 动机:统计周末时间对于普通用户最便宜的酒店是核心需求,完成该功能比较简单
+    - 对象:酒店预订系统、客户、酒店、预订
+    - 测试名称:should_return_cheapest_hotel_when_regular_customer_live_in_weekend()
+3.
+    - 描述:酒店预订系统找到工作日时间段会员用户可预订的最便宜的酒店
+    - 动机:这是核心需求,完成该功能比较简单
+    - 对象:酒店预订系统、客户、酒店、预订
+    - 测试名称:should_return_cheapest_hotel_when_reward_customer_live_in_weekday()
