@@ -1,9 +1,14 @@
 package com.thoughtworks.hotel;
 
-public class Calculator {
-    public int price=0;
-    public int calculate(Hotel hotel,Customer customer) {
+import java.util.List;
 
-        return 1;
+public class Calculator {
+
+    public int calculate(Hotel hotel, Customer customer) {
+        List<String> list = customer.getDateList();
+        for (int i = 0; i < list.size(); i++) {
+            String tempData = list.get(i);
+            return 1;
+        }
     }
 }

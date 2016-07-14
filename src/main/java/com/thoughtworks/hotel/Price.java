@@ -12,4 +12,20 @@ public class Price {
         this.rewardPriceAtWeekday = rewardPriceAtWeekday;
         this.rewardPriceAtWeekend = rewardPriceAtWeekend;
     }
+
+    public int getRegularPriceAtWeekday() {
+        return regularPriceAtWeekday;
+    }
+
+    public int getRewardPriceAtWeekday() {
+        return rewardPriceAtWeekday;
+    }
+
+    public int getRegularPriceAtWeekend() {
+        return regularPriceAtWeekend;
+    }
+
+    public int getRewardPriceAtWeekend() {
+        return rewardPriceAtWeekend;
+    }
 }
