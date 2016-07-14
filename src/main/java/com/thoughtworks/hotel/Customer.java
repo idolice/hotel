@@ -1,12 +1,24 @@
 package com.thoughtworks.hotel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
     private String type;
-    private String date;
 
-    public Customer(String type, String date) {
+    private List<String> dateList=new ArrayList<>();
+
+    public Customer(String type, List<String> dateList) {
         this.type = type;
-        this.date = date;
+        this.dateList = dateList;
+    }
+
+    public List<String> getDateList() {
+        return dateList;
+    }
+
+    public void setDateList(List<String> dateList) {
+        this.dateList = dateList;
     }
 
     public String getType() {
@@ -17,11 +29,6 @@ public class Customer {
         this.type = type;
     }
 
-    public String getDate() {
-        return date;
-    }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
+
 }
