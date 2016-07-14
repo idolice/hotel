@@ -10,6 +10,12 @@ public class HotelReservation {
         if (customer.getType() == "regular" && customer.getDate() == "weekend") {
             hotel.setName("Bridgewood");
         }
+        if (customer.getType() == "reward" && customer.getDate() == "weekday") {
+            hotel.setName("Lakewood");
+        }
+        if (customer.getType() == "reward" && customer.getDate() == "weekend") {
+            hotel.setName("Ridgewood");
+        }
         return hotel.getName();
 
     }

@@ -22,3 +22,8 @@
     - 动机:这是核心需求,完成该功能比较简单
     - 对象:酒店预订系统、客户、酒店、预订
     - 测试名称:should_return_cheapest_hotel_when_reward_customer_live_in_weekday()
+4.
+    - 描述:酒店预订系统找到周末时间段会员用户可预订的最便宜的酒店
+    - 动机:这是核心需求,完成该功能比较简单
+    - 对象:酒店预订系统、客户、酒店、预订
+    - 测试名称:should_return_cheapest_hotel_when_reward_customer_live_in_weekend()

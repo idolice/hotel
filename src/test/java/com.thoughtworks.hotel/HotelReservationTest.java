@@ -36,7 +36,21 @@ public class HotelReservationTest {
         // given
 
         // when
-
+        HotelReservation hotelReservation = new HotelReservation();
+        Customer customer = new Customer("reward", "weekday");
+        String hotelName = hotelReservation.reserve(customer);
         // then
+        assertThat(hotelName, is("Lakewood"));
+    }
+    @Test
+    public void should_return_cheapest_hotel_when_reward_customer_live_in_weekend() {
+        // given
+
+        // when
+        HotelReservation hotelReservation = new HotelReservation();
+        Customer customer = new Customer("reward", "weekend");
+        String hotelName = hotelReservation.reserve(customer);
+        // then
+        assertThat(hotelName, is("Ridgewood"));
     }
 }
