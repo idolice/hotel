@@ -8,6 +8,7 @@ public class Customer {
 
     private List<String> dateList=new ArrayList<>();
 
+
     public Customer(String type, List<String> dateList) {
         this.type = type;
         this.dateList = dateList;

@@ -3,18 +3,22 @@ package com.thoughtworks.hotel;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.stream.Collectors.toList;
+
 public class HotelReservation {
 
     private List<Hotel> hotels = new ArrayList<>();
+    private List<Integer> prices = new ArrayList<>();
 
     public HotelReservation() {
         initHotelList();
     }
 
     public String reserve(Customer customer) {
-
-        return null;
-
+        Calculator calculator = new Calculator();
+        prices = hotels.stream().map(hotel -> calculator.calculate(hotel, customer)).collect(toList());
+        int index=calculator.minIndex(prices);
+        return hotels.get(index).getName();
 
     }
 
